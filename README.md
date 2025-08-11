@@ -98,46 +98,5 @@ erDiagram
     users ||--o{ categories : "tiene"
     categories ||--o{ transactions : "clasifica"
     users ||--o{ transactions : "registra"
-
-
-🛠 Tecnologías
-Frontend: React.js, TailwindCSS, Chart.js
-Backend: Node.js, Express, Sequelize, MySQL
-Autenticación: JWT, bcrypt
-Documentación API: Swagger
-Exportación: PDFKit, ExcelJS
-
-🚀 Instalación
-Backend
-
-bash
-Copiar
-Editar
-cd backend
-npm install
-npm run dev
-Frontend
-
-bash
-Copiar
-Editar
-cd frontend
-npm install
-npm run dev
-📜 Licencia
-MIT License – Libre para uso y modificación.
-
-yaml
-Copiar
-Editar
-
 ---
-
-Con esto:
-- El bloque Mermaid queda cerrado antes de la sección de **Tecnologías**.
-- Los bloques de carpetas están en formato de código para que no se rompa el diseño.
-- Se mantiene todo bien estructurado y fácil de leer en GitHub.  
-
-Si quieres, puedo también **agregarle un diagrama de arquitectura en Mermaid** para que se vea más profesional en el README.
-Patrón **MVC + capa de servicios**:
 
