@@ -97,3 +97,30 @@ erDiagram
     users ||--o{ categories : "tiene"
     categories ||--o{ transactions : "clasifica"
     users ||--o{ transactions : "registra"
+
+
+
+🛠 Tecnologías
+Frontend: React.js, TailwindCSS, Chart.js
+
+Backend: Node.js, Express, Sequelize, MySQL
+
+Autenticación: JWT, bcrypt
+
+Documentación API: Swagger
+
+Exportación: PDFKit, ExcelJS
+
+🚀 Instalación
+- Backend
+cd backend
+npm install
+npm run dev
+
+- Frontend
+cd frontend
+npm install
+npm run dev
+
+📜 Licencia
+MIT License – Libre para uso y modificación.
