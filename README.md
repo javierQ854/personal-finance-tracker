@@ -51,6 +51,8 @@ backend/
 
 ### Frontend (React.js)
 Arquitectura modular por páginas y componentes:
+
+
 frontend/
 ├── src/
 │ ├── pages/ # Pantallas principales
