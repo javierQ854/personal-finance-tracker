@@ -36,6 +36,7 @@ Una aplicación web que permita:
 ## 🏗 Arquitectura
 
 ### Backend (Node.js + Express + MySQL)
+Patrón **MVC + capa de servicios**:
 
 backend/
 ├── src/
