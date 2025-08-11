@@ -61,10 +61,6 @@ frontend/
 │ ├── hooks/ # Custom hooks
 │ └── App.jsx
 
-
-
----
-
 ## 🗄 Diagrama de Base de Datos
 
 ```mermaid
@@ -98,5 +94,5 @@ erDiagram
     users ||--o{ categories : "tiene"
     categories ||--o{ transactions : "clasifica"
     users ||--o{ transactions : "registra"
----
+
 
