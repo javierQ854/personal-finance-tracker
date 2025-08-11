@@ -37,3 +37,61 @@ Una aplicación web que permita:
 
 ### Backend (Node.js + Express + MySQL)
 Patrón **MVC + capa de servicios**:
+
+backend/
+├── src/
+│ ├── config/ # Configuración DB y JWT
+│ ├── models/ # Modelos Sequelize
+│ ├── controllers/ # Reciben la request
+│ ├── services/ # Lógica de negocio
+│ ├── routes/ # Definición de endpoints
+│ ├── middlewares/ # Autenticación y validaciones
+│ ├── utils/ # Funciones auxiliares
+│ └── app.js # Servidor Express
+
+### Frontend (React.js)
+Arquitectura modular por páginas y componentes:
+frontend/
+├── src/
+│ ├── pages/ # Pantallas principales
+│ ├── components/ # Componentes reutilizables
+│ ├── services/ # Consumo de API
+│ ├── context/ # Manejo de estado global
+│ ├── hooks/ # Custom hooks
+│ └── App.jsx
+
+---
+
+## 🗄 Diagrama de Base de Datos
+
+```mermaid
+erDiagram
+    users {
+        INT id PK
+        VARCHAR name
+        VARCHAR email
+        VARCHAR password
+        TIMESTAMP created_at
+    }
+
+    categories {
+        INT id PK
+        VARCHAR name
+        ENUM type
+        INT user_id FK
+        TIMESTAMP created_at
+    }
+
+    transactions {
+        INT id PK
+        DECIMAL amount
+        TEXT description
+        DATE date
+        INT category_id FK
+        INT user_id FK
+        TIMESTAMP created_at
+    }
+
+    users ||--o{ categories : "tiene"
+    categories ||--o{ transactions : "clasifica"
+    users ||--o{ transactions : "registra"
